@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/icomoon.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-
+    <header class="py-3.5 bg-white">
+        <div class="warrper">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="png"/>
+                </a>
+                <ul class="flex items-center space-x-6 lg:space-x-8 2xl:spcae-x-12">
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Explore Grounds</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">My Bookings</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="flex items-center space-x-7">
+                    <div class="flex items-center space-x-2">
+                        <span class="icon-location font-semibold text-18 md:text-20 lg:text-24"></span>
+                        <span class="inline-block text-dark font-semibold text-16 lg:text-18">SURAT</span>
+                    </div>
+                    <button class="btn_primary">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- radio  -->
+    <div class="flex items-center">
+        <div class="w-max relative">
+            <input type="checkbox" id="check2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
+            <div class="radio anim">
+                <span class="w-2 h-2 bg-white block rounded-full opacity-0"></span>
+            </div>
+        </div>
+        <label for="check2" class="ml-2 block">Distance from you</label>
+    </div>
 </body>
 <script src="assets/js/script.js"></script>
 </html>

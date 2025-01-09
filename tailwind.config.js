@@ -41,10 +41,10 @@ module.exports = {
       colors:{
         'primary':'#A0EB00',
         'secondary':'#D72028',
-        'dark' : '#181A20',
+        'dark' : '#0A0909',
         'green' :'#236F0B',
-        'm2' :'#282828',
-        'm3' : '#242424',
+        'g1' :'#717171',
+        'g2' : '#BEBEBE',
       },
       fontFamily: {
         'oswald' : ['Oswald','serif'],
