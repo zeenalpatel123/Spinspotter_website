@@ -45,6 +45,9 @@ module.exports = {
         'green' :'#236F0B',
         'g1' :'#717171',
         'g2' : '#BEBEBE',
+        'g3' : '#282828',
+        'g4' : '#484848',
+        'g5' : '#353535'
       },
       fontFamily: {
         'oswald' : ['Oswald','serif'],

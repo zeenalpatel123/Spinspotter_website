@@ -872,7 +872,6 @@ input:checked + .checkbox span, input:checked + .radio span{
 .gra_border_bg {
   background: #0A0909;
   color: white;
-  padding:20px ;
   border-radius: 10px;
 }
 
@@ -1313,12 +1312,6 @@ button.active {
   margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1378,6 +1371,16 @@ button.active {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.bg-g4{
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 72 72 / var(--tw-bg-opacity, 1));
+}
+
+.bg-g5{
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 53 53 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary{
@@ -1832,6 +1835,10 @@ button.active {
     padding: 0.875rem;
   }
 
+  .md\:p-5{
+    padding: 1.25rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2001,6 +2008,14 @@ button.active {
 
   .lg\:p-3{
     padding: 0.75rem;
+  }
+
+  .lg\:p-7{
+    padding: 1.75rem;
+  }
+
+  .lg\:p-5{
+    padding: 1.25rem;
   }
 
   .lg\:px-12{

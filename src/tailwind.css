@@ -43,7 +43,6 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
   .gra_border_bg {
     background: #0A0909;
     color: white;
-    padding:20px ;
     border-radius: 10px;
   
   }
