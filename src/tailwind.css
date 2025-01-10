@@ -2,14 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @tailwind base;
 @tailwind components;
-.btn_primary{@apply bg-secondary anim rounded-[10px] text-14 xl:text-16 font-bold w-full border-2 border-secondary max-w-28 lg:max-w-[165px] py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer hover:bg-transparent hover:border-secondary hover:text-secondary inline-block;}
+*{
+    font-family: "Alata", serif;
+}
+body{@apply bg-dark;}
+.warrper{@apply w-full max-w-[1480px] mx-auto px-5;}
+.btn_primary{@apply bg-secondary font-oswald anim rounded-[10px] text-14 xl:text-16 font-bold border-2 border-secondary min-w-28 lg:min-w-[165px] py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer hover:bg-transparent hover:border-secondary hover:text-secondary inline-block;}
 .h1,h1{@apply text-32 md:text-38 lg:text-52 xl:text-7xl 2xl:text-80 font-bold text-primary font-oswald;}
 .h2,h2{@apply text-28 lg:text-34 xl:text-40 2xl:text-48 font-bold text-primary font-oswald;}
 /* .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;} */
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .text18{@apply text-14 lg:text-16 2xl:text-18;}
 .text20{@apply text-16 lg:text-18 2xl:text-20;}
+.text24{@apply text-16 md:text-18 lg:text-20 2xl:text-24;}
 .text28{@apply text-18 md:text-20 lg:text-24 2xl:text-28;}
 .anim{@apply duration-300 transition-all;}
+/* single border gradient  */
+.gra_border{ 
+    background: linear-gradient(to right, rgba(172, 172, 172, 0), rgba(255, 255, 255, 1), rgba(172, 172, 172, 0));
+    width: 100%;
+    height: 1px;
+    display: block;
+}
 
+/* box gradient  */
+.gra_border_2 {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(322.76deg, #FFFFFF -1.67%, rgba(255, 255, 255, 0) 28.83%, rgba(255, 255, 255, 0) 69.5%, #FFFFFF 100%);
+    padding: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+  }
+  .gra_border_bg {
+    background: #0A0909;
+    color: white;
+    padding:20px ;
+    border-radius: 10px;
+  
+  }
+  .checkbox{@apply w-5 h-5 rounded border border-white flex items-center justify-center;}
+  .radio{@apply w-5 h-5 rounded-full border-2 border-white flex items-center justify-center;}
+  input:checked + .checkbox, input:checked + .radio{@apply border-secondary bg-secondary;}
+  input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
+
+
+  .gra_border_3 {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(350.76deg, #FFFFFF -1.67%, rgba(255, 255, 255, 0) 28.83%, rgba(255, 255, 255, 0) 69.5%, #FFFFFF 100%);
+    padding: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
 @tailwind utilities;
