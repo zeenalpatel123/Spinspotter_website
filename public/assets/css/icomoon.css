@@ -26,6 +26,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-money:before {
+    content: "\e929";
+  }
+  .icon-calendar:before {
+    content: "\e92a";
+  }
   .icon-check:before {
     content: "\e914";
   }
@@ -59,7 +65,7 @@
   .icon-lock:before {
     content: "\e924";
   }
-  .icon-Frame-2:before {
+  .icon-bag:before {
     content: "\e925";
   }
   .icon-global:before {

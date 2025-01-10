@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Activity</title>
+    <link rel="stylesheet" href="assets/css/icomoon.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <section class="relative">
+        <div class="warrper relative z-10">
+            <div class="text-center py-24 space-y-2.5">
+                <h2>Create activity</h2>
+                <ul class="flex items-center justify-center space-x-3">
+                    <li>
+                        <a href="#" class="inline-block text-white text16 font-normal">Home</a>
+                    </li>
+                    <li>
+                        <span class="icon-right text-14 md:text-18 xl:text-20 text-white inline-block"></span>
+
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-white text16 font-normal">Create activity</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="assets/images/cricket_bg.png" class="absolute inset-0 w-full h-full object-cover" alt="cricket_bg"/>
+    </section>
+    <section>
+        <div class="warrper py-8 md:py-10 xl:py-12">
+            <div class="w-full lg:w-[950px] mx-auto gra_border_2">
+                <div class="gra_border_bg">
+                    <form class="flex flex-wrap -mx-3.5">
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">ACTIVITY TYPE</label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">SPORT</label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select Sport"/>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">area</label>
+                            <input type="text" class="relative py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Search Location"/>
+                            <span class="icon-location text-white text24 absolute"></span>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">date of birth </label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select Date"/>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">START TIME</label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">END TIME</label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                        </div>
+                        <div class="w-full p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">activity access</label>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-max relative">
+                                        <input type="radio" name="activity_access" id="radio" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
+                                        <div class="radio anim">
+                                            <span class="w-2 h-2 bg-white block rounded-full opacity-0"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="icon-global text-white text20"></span>
+                                        <label for="radio" class="ml-2 block">Public</label>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-max relative">
+                                        <input type="radio" name="activity_access" id="radio2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
+                                        <div class="radio anim">
+                                            <span class="w-2 h-2 bg-white block rounded-full opacity-0"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="icon-lock text-white text20"></span>
+                                        <label for="radio2" class="ml-2 block">Invite Only</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">TOTAL PLAYERS</label>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Enter total players"/>
+                        </div>
+                        <div class="w-full p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">Add Instructions</label>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-max relative">
+                                        <input type="checkbox" id="check2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
+                                        <div class="checkbox anim">
+                                            <span class="icon-check text-white block opacity-0"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="icon-bag text-white text20"></span>
+                                        <label for="check2" class="ml-2 block">Bring Your Own Equipments</label>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-max relative">
+                                        <input type="checkbox" id="check" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
+                                        <div class="checkbox anim">
+                                            <span class="icon-check text-white block opacity-0"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="icon-cost text-white text20"></span>
+                                        <label for="check" class="ml-2 block">Cost Shared</label>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="w-full p-3.5">
+                            <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">DESCRIPTION</label>
+                            <textarea cols="2" rows="3" placeholder="Enter Description" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
