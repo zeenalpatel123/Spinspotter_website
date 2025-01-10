@@ -12,9 +12,9 @@
         <div class="warrper">
             <div class="flex items-center justify-between">
                 <a href="#">
-                    <img src="assets/images/logo.png" alt="png"/>
+                    <img src="assets/images/logo.png" class="max-w-36 lg:max-w-40 xl:max-w-full" alt="png"/>
                 </a>
-                <ul class="flex items-center space-x-6 lg:space-x-8 2xl:spcae-x-12">
+                <ul class="hidden lg:flex items-center space-x-6 lg:space-x-8 2xl:space-x-12">
                     <li>
                         <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Home</a>
                     </li>
@@ -34,18 +34,128 @@
                         <a href="#" class="inline-block font-alata text-g1 font-normal text-14 xl:text-16 hover:text-secondary anim">Contact Us</a>
                     </li>
                 </ul>
-                <div class="flex items-center space-x-7">
-                    <div class="flex items-center space-x-2">
-                        <span class="icon-location font-semibold text-18 md:text-20 lg:text-24"></span>
-                        <span class="inline-block text-dark font-semibold text-16 lg:text-18">SURAT</span>
+                <div class="flex items-center space-x-3.5 lg:space-x-5 xl:space-x-7">
+                    <div class="hidden md:flex items-center space-x-2">
+                        <span class="icon-location font-semibold text-18 lg:text-20 xl:text-24"></span>
+                        <span class="inline-block text-dark font-semibold text-14 lg:text-16 xl:text-18">SURAT</span>
                     </div>
                     <button class="btn_primary">LOGIN</button>
                 </div>
             </div>
         </div>
     </header>
+    <footer class="relative">
+        <div class="warrper pt-7 md:pt-10 lg:pt-11 xl:pt-12 relative z-10">
+            <a href="#">
+                <img src="assets/images/footer_logo.png" class="max-w-52 md:max-w-64 xl:max-w-full mx-auto" alt="footer_logo"/>
+            </a>
+            <div class="flex flex-wrap -mx-2.5 md:-mx-3 my-6 md:my-8 lg:my-10 xl:my-12">
+                <div class="w-1/2 md:w-3/12 lg:w-2/12 p-2.5 md:p-3">
+                    <h4 class="text20 text-primary font-medium font-oswald mb-2.5 lg:mb-4 xl:mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">About Us </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Explore Grounds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">My Bookings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-3/12 lg:w-2/12 p-2.5 md:p-3">
+                    <h4 class="text20 text-primary font-medium font-oswald mb-2.5 lg:mb-4 xl:mb-6">Others</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text16 text-white font-normal">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-4/12 p-2.5 md:p-3">
+                    <h4 class="text20 text-primary font-medium font-oswald mb-2.5 lg:mb-4 xl:mb-6">Contact us</h4>
+                    <ul class="space-y-2.5 md:space-y-3 xl:space-y-5">
+                        <li class="space-y-1">
+                            <span class="block text18 text-white font-normal">Email</span>
+                            <span class="block text16 text-white font-normal">info@SpinSpotter.com</span>
+                        </li>
+                        <li class="space-y-1">
+                            <span class="block text18 text-white font-normal">Phone number</span>
+                            <span class="block text16 text-white font-normal">+91 82002 90909</span>
+                        </li>
+                        <li class="space-y-1">
+                            <span class="block text18 text-white font-normal">Address</span>
+                            <span class="block text16 text-white font-normal max-w-[437px]">12 floor, The Junomoneta Tower, near Rajhans Cinema, opposite Pal RTO, Adajan, Surat - 395010, Gujarat, India</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-4/12 p-2.5 md:p-3">
+                    <h4 class="text20 text-primary font-medium font-oswald mb-2.5 lg:mb-4 xl:mb-6">Subscribe</h4>
+                    <label for="" class="text16 text-white font-normal block mb-2 md:mb-3 xl:mb-5">Stay up to date with our news</label>
+                    <div class="flex items-center space-x-1.5 lg:space-x-2 xl:space-x-3">
+                        <input type="text" class="bg-white py-1.5 md:py-2.5 xl:py-3.5 px-3 md:px-4 xl:px-5 text16 text-g1 font-normal rounded-[10px] outline-none max-w-[280px] w-full" placeholder="Enter your email here">
+                        <button class="btn_primary py-1.5 md:py-2.5 xl:py-3.5 px-3 md:px-4 xl:px-5">Subscribe</button>
+                    </div>
+                    <div class="flex items-center -mx-2 lg:-mx-3 mt-10 md:mt-12 lg:mt-16 xl:mt-20">
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/visa.png" class="mx-auto"  alt="visa"/>
+                        </div>
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/googlepay.png" class="mx-auto"  alt="googlepay"/>
+                        </div>
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/applepay.png" class="mx-auto"  alt="applepay"/>
+                        </div>
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/paypal.png" class="mx-auto"  alt="paypal"/>
+                        </div>
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/stripe.png" class="mx-auto"  alt="stripe"/>
+                        </div>
+                        <div class="w-1/6 p-2 lg:p-3">
+                            <img src="assets/images/mastercard.png" class="mx-auto"  alt="mastercard"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="gra_border"></span>
+            <div class="py-3.5 lg:py-5 xl:py-7 flex flex-wrap sm:flex-nowrap space-x-5 md:space-x-0 items-center justify-center sm:justify-between">
+                <p class="text16 text-primary font-medium mb-2.5 mb:mb-0 text-center">Copyright © 2024 by SpinSpotter. All Rights Reserved</p>
+                <div class="flex items-center space-x-1.5 md:space-x-2.5 xl:space-x-3">
+                    <div class="bg-primary w-7 md:w-8 xl:w-10 h-7 md:h-8 xl:h-10 rounded-full flex items-center justify-center">
+                        <span class="icon-facebook text-dark text20"></span>
+                    </div>
+                    <div class="bg-primary w-7 md:w-8 xl:w-10 h-7 md:h-8 xl:h-10 rounded-full flex items-center justify-center">
+                        <span class="icon-instragram text-dark text20"></span>
+                    </div>
+                    <div class="bg-primary w-7 md:w-8 xl:w-10 h-7 md:h-8 xl:h-10 rounded-full flex items-center justify-center">
+                        <span class="icon-twitter text-dark text20"></span>
+                    </div>
+                    <div class="bg-primary w-7 md:w-8 xl:w-10 h-7 md:h-8 xl:h-10 rounded-full flex items-center justify-center">
+                        <span class="icon-youtube text-dark text20"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/footer_bg.png" class="absolute inset-0 w-full h-full object-cover" alt="footer_bg"/>
+    </footer>
     <!-- radio  -->
-    <div class="flex items-center">
+    <div class="flex items-center hidden">
         <div class="w-max relative">
             <input type="checkbox" id="check2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
             <div class="radio anim">
