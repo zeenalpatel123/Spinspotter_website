@@ -32,36 +32,70 @@
         <div class="warrper py-8 md:py-10 xl:py-12">
             <div class="w-full lg:w-[950px] mx-auto gra_border_2">
                 <div class="gra_border_bg">
-                    <form class="flex flex-wrap -mx-3.5">
-                        <div class="w-1/2 p-3.5">
+                    <form class="flex flex-wrap -mx-2 md:-mx-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">ACTIVITY TYPE</label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                            <div class="relative w-full">
+                                <div class="w-full relative py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] bg-transparent flex justify-between" onclick="toggleActive('#select_inpu','active')">
+                                    <span class="text16">Select</span>
+                                    <span  class="icon-down text-white text24 absolute top-1/2 -translate-y-1/2 right-5"></span>
+                                </div>
+                                <ul id="select_inpu" class="absolute w-full top-full translate-y-5 invisible opacity-0 py-2.5 md:py-3.5 px-3 md:px-5 bg-g4 anim z-20 rounded-md anim space-y-1 lg:space-y-2.5">
+                                    <li>
+                                       <a href="#" class="text-white text16 font-normal">Regular</a> 
+                                    </li>
+                                    <li>
+                                       <a href="#" class="text-white text16 font-normal">Tournament</a> 
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">SPORT</label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select Sport"/>
+                            <div class="relative w-full">
+                                <div class="w-full relative py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] bg-transparent flex justify-between" onclick="toggleActive('#select_inpu2','active');">
+                                    <span class="text16">Select</span>
+                                    <span  class="icon-down text-white text24 absolute top-1/2 -translate-y-1/2 right-5"></span>
+                                </div>
+                                <ul id="select_inpu2" class="absolute w-full top-full translate-y-5 invisible opacity-0 py-2.5 md:py-3.5 px-3 md:px-5 bg-g4 anim z-20 rounded-md anim space-y-1 lg:space-y-2.5">
+                                    <li>
+                                       <a href="#" class="text-white text16 font-normal">Box Cricket</a> 
+                                    </li>
+                                    <li>
+                                       <a href="#" class="text-white text16 font-normal">Football</a> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white text16 font-normal">Badminton</a> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white text16 font-normal">Cricket</a> 
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">area</label>
-                            <input type="text" class="relative py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Search Location"/>
-                            <span class="icon-location text-white text24 absolute"></span>
+                            <div class="relative">
+                                <input type="text" class="pl-10 md:pl-12 lg:pl-14 py-1.5 md:py-2.5 xl:py-3.5 pr-2.5 md:pr-3.5 xl:pr-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none" placeholder="Search Location"/>
+                                <span class="icon-location text-white text24 absolute top-1/2 -translate-y-1/2 left-3 lg:left-5"></span>
+                            </div>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">date of birth </label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select Date"/>
+                            <input type="date" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none" placeholder="Select Date"/>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">START TIME</label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                            <input type="time" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none" placeholder="Select"/>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full xs:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">END TIME</label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Select"/>
+                            <input type="time" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none" placeholder="Select"/>
                         </div>
-                        <div class="w-full p-3.5">
+                        <div class="w-full p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">activity access</label>
-                            <div class="flex items-center space-x-6">
-                                <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-4 lg:space-x-6">
+                                <div class="flex items-center space-x-2.5 lg:space-x-4">
                                     <div class="w-max relative">
                                         <input type="radio" name="activity_access" id="radio" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
                                         <div class="radio anim">
@@ -70,10 +104,10 @@
                                     </div>
                                     <div class="flex items-center space-x-2">
                                         <span class="icon-global text-white text20"></span>
-                                        <label for="radio" class="ml-2 block">Public</label>
+                                        <label for="radio" class="ml-2 block text16 text-white">Public</label>
                                     </div>
                                 </div>
-                                <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-2.5 lg:space-x-4">
                                     <div class="w-max relative">
                                         <input type="radio" name="activity_access" id="radio2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
                                         <div class="radio anim">
@@ -82,19 +116,19 @@
                                     </div>
                                     <div class="flex items-center space-x-2">
                                         <span class="icon-lock text-white text20"></span>
-                                        <label for="radio2" class="ml-2 block">Invite Only</label>
+                                        <label for="radio2" class="ml-2 block text16 text-white">Invite Only</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/2 p-3.5">
+                        <div class="w-full sm:w-1/2 p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">TOTAL PLAYERS</label>
-                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none" placeholder="Enter total players"/>
+                            <input type="text" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none" placeholder="Enter total players"/>
                         </div>
-                        <div class="w-full p-3.5">
+                        <div class="w-full p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">Add Instructions</label>
-                            <div class="flex items-center space-x-6">
-                                <div class="flex items-center space-x-4">
+                            <div class="flex flex-wrap xs:flex-nowrap items-center space-y-2.5 xs:space-y-0 space-x-0 xs:space-x-4 xl:space-x-6">
+                                <div class="w-full xs:w-auto flex items-center space-x-2.5 lg:space-x-4">
                                     <div class="w-max relative">
                                         <input type="checkbox" id="check2" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
                                         <div class="checkbox anim">
@@ -103,10 +137,10 @@
                                     </div>
                                     <div class="flex items-center space-x-2">
                                         <span class="icon-bag text-white text20"></span>
-                                        <label for="check2" class="ml-2 block">Bring Your Own Equipments</label>
+                                        <label for="check2" class="ml-2 block text16 text-white">Bring Your Own Equipments</label>
                                     </div>
                                 </div>
-                                <div class="flex items-center space-x-4">
+                                <div class="w-full xs:w-auto flex items-center space-x-2.5 lg:space-x-4">
                                     <div class="w-max relative">
                                         <input type="checkbox" id="check" class="absolute inset-0 w-full h-full opacity-0 z-10"/>
                                         <div class="checkbox anim">
@@ -115,19 +149,28 @@
                                     </div>
                                     <div class="flex items-center space-x-2">
                                         <span class="icon-cost text-white text20"></span>
-                                        <label for="check" class="ml-2 block">Cost Shared</label>
+                                        <label for="check" class="ml-2 block text16 text-white">Cost Shared</label>
                                     </div>
                                 </div>
                             </div> 
                         </div>
-                        <div class="w-full p-3.5">
+                        <div class="w-full p-2 md:p-3.5">
                             <label class="text18 text-primary font-semibold font-oswald block mb-2.5 uppercase">DESCRIPTION</label>
-                            <textarea cols="2" rows="3" placeholder="Enter Description" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] w-full bg-transparent outline-none"></textarea>
+                            <textarea cols="2" rows="3" placeholder="Enter Description" class="py-1.5 md:py-2.5 xl:py-3.5 px-2.5 md:px-3.5 xl:px-5 border border-white rounded-[10px] text16 w-full bg-transparent outline-none"></textarea>
                         </div>
                     </form>
+                    <div class="text-center mt-2.5 xl:mt-3.5">
+                        <button class="btn_primary">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script>
+    function toggleActive(Id, db) {
+    var element = document.querySelector(Id);
+    element.classList.toggle(db);
+}
+</script>
 </html>
