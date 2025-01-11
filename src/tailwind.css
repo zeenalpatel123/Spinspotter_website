@@ -7,7 +7,9 @@
 }
 body{@apply bg-dark;}
 .warrper{@apply w-full max-w-[1480px] mx-auto px-5;}
-.btn_primary{@apply bg-secondary font-oswald anim rounded-[10px] text-14 xl:text-16 font-bold border-2 border-secondary min-w-24 lg:min-w-28 xl:min-w-[165px] py-1.5 lg:py-2.5 xl:py-3 px-2.5 xl:px-3.5 text-white cursor-pointer hover:bg-transparent hover:border-secondary hover:text-secondary inline-block;}
+.btn_primary{@apply bg-secondary font-oswald anim rounded-[10px] border-2 border-secondary text-white cursor-pointer hover:bg-transparent hover:border-secondary hover:text-secondary inline-block;}
+.btn_secondary{@apply bg-white font-oswald anim rounded-[10px] border-2 border-white text-dark cursor-pointer hover:bg-transparent hover:border-white hover:text-white inline-block;}
+
 .h1,h1{@apply text-32 md:text-38 lg:text-52 xl:text-7xl 2xl:text-80 font-bold text-primary font-oswald;}
 .h2,h2{@apply text-28 lg:text-34 xl:text-40 2xl:text-48 font-bold text-primary font-oswald;}
 /* .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;} */
